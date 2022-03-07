@@ -4,7 +4,7 @@ public class ArrayChainBreak {
 	public int solution(int[] A) {
 		
 		List<Integer> results=new ArrayList<>();
-		for(int i=1;i<A.length-2;i++) {
+		for(int i=0;i<A.length-2;i++) {
 			for(int j=i+2;j<A.length;j++) {
 				int temp=A[i]+A[j];
 				results.add(temp);

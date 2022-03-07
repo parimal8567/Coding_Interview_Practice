@@ -9,7 +9,7 @@ public class Solution {
 		}
 		
 		
-		int maxFragment=1;
+		int maxFragment=0;
 		for(int i=0;i<s.length()-1;i++) {
 			String fragment=s.substring(i, i+2);
 			if(Integer.parseInt(fragment)>maxFragment) {
@@ -31,7 +31,7 @@ public class Solution {
 		// Input
 		
 		String s="88";
-		String s1="50552";
+		String s1="0000";
 		int result=sl.run(s1);
 		System.out.println("Result is "+ result);
 		
