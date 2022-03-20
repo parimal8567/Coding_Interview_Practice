@@ -24,8 +24,8 @@ public class StringDeletion {
 		String input="ababa";
 		int[] costs={10,5,10,5,10};
 		
-		String input1="aaaa";
-		int[] costs1={6,5,4,3};
+		String input1="";
+		int[] costs1={};
 		
 		
 		int result=sd.solution(input1, costs1);
