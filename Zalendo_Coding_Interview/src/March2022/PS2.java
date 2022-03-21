@@ -18,8 +18,6 @@ public class PS2 {
 		filterCellMap(cellMap, B);
 		
 		Stack<String> stack=new Stack<>();
-//		int row=B.length-1;
-//		int col=B[0][0].length()-1;
 		
 		Set<String> startElements=cellMap.get("A");
 		String start=startElements.iterator().next();
@@ -45,13 +43,10 @@ public class PS2 {
 				visitedRows.add(element);
 			}
 			
-//			if(cellMap.get("A").contains(formElement(rowNum, colNum))) {
-//				System.out.println("---------------------->>>>>Reached!!!!!!");
-//				System.out.println("Total Pop="+totalPop);
-//				return true;
-//			} 
-			
-			if(formElement(rowNum, colNum).equals("33")) {
+			int exitRow=B.length-1;
+			int exitcol=B[0][0].length()-1;
+			String exitCell=formElement(exitRow, exitcol);
+			if(formElement(rowNum, colNum).equals(exitCell)) {
 				System.out.println("-->>Reached! Whoa!!");
 				System.out.println("Total Steps="+(totalPop-1));
 				return true;
