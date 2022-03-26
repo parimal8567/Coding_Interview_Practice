@@ -1,9 +1,16 @@
-package Problem1;
+package com.amazon.berlin.online.coding;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Test1 {
+/*
+ * You are given an n*m matrix with 1,0 values
+ * 1- Updated server
+ * 0- Needs to be updated
+ * Find the maximum number of days to update all the servers.
+ * 
+ */
+public class FindMinimumDaysToUpdateServer {
 
 	
 	public int minimumDays(List<List<Integer>> grid, int rows, int columns) {
@@ -131,7 +138,7 @@ public class Test1 {
 		grid.add(e);
 		
 		
-		Test1 t1=new Test1();
+		FindMinimumDaysToUpdateServer t1=new FindMinimumDaysToUpdateServer();
 		int result=t1.minimumDays(grid, rows, columns);
 				
 		System.out.println(result-1);

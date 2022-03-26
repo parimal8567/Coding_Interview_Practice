@@ -1,11 +1,14 @@
+package com.amazon.pune.online.coding;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
+/*
+ * Incomplete due to time restriction
+ */
 
-
-public class FebPuneCoding {
+public class FindMaxProcessingower {
 
 	public String solution(List<Integer> processingPower, List<Integer> bootingPower, long powerMax) {
 		List<Integer> a=new ArrayList<>();
@@ -39,7 +42,7 @@ public class FebPuneCoding {
 	}
 	
 	public static void main(String[] args) {
-		FebPuneCoding fc=new FebPuneCoding();
+		FindMaxProcessingower fc=new FindMaxProcessingower();
 		String res=fc.solution();
 	}
 }

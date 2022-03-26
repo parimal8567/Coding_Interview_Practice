@@ -1,10 +1,11 @@
+package com.amazon.amsterdam.phone.interview;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Set;
 import java.util.TreeSet;
 
 /**
+ * Date : 21 March 2022
  * N= {1,2,5,2,8,9,4,1,5,7,0,4};
  * K= 3
  *

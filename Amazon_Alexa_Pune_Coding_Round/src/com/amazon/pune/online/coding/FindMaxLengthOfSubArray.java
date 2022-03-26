@@ -1,6 +1,15 @@
-package java7;
+package com.amazon.pune.online.coding;
 
-public class PuneCodingRound7 {
+
+/*
+ * Find the max length of sub array whose product is 1
+ * Given array contains only 1,-1 entries
+ *	Examples Inputs:	
+ *		[1,-2,-3,4]=4
+ *		[0,1,-2,-3,-4]=3
+ *		[-1,-2,-3,0,1]=2÷
+ */
+public class FindMaxLengthOfSubArray {
 
 	public int solution(int[] nums) {
 		  
@@ -69,7 +78,7 @@ public class PuneCodingRound7 {
 	
 	public static void main(String[] args) {
 		
-		PuneCodingRound7 fc=new PuneCodingRound7();
+		FindMaxLengthOfSubArray fc=new FindMaxLengthOfSubArray();
 		//List<Integer> nums= new ArrayList<>(Arrays.asList(-1,1,-1,1));
 		
 		
