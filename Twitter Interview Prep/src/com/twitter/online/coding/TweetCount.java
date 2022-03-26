@@ -9,6 +9,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * return the tweet's count for the duration provided
+ * 
+ * Incomplete code
+ */
 public class TweetCount {
 
 	
@@ -22,6 +27,7 @@ public class TweetCount {
 	 public void recordTweet(String tweetName, long time) {
 		 if(null == teweetData.get(tweetName)) {
 			 Set<Long> tweetTimeSet=new HashSet<>();
+			 tweetTimeSet.add(time);
 			 teweetData.put(tweetName, tweetTimeSet);
 		 }else {
 			 Set<Long> tweetTimeSet=teweetData.get(tweetName);
@@ -54,11 +60,11 @@ public class TweetCount {
 	 public static void main(String[] args) {
 		 TweetCount tc=new TweetCount();
 		 tc.recordTweet("tweet1", 123123);
-		 tc.recordTweet("tweet1", 123123);
-		 tc.recordTweet("tweet1", 123123);
-		 tc.recordTweet("tweet1", 123123);
-		 tc.recordTweet("tweet1", 123123);
-		 tc.recordTweet("tweet1", 123123);
+		 tc.recordTweet("tweet2", 123123);
+		 tc.recordTweet("tweet3", 123123);
+		 tc.recordTweet("tweet4", 123123);
+		 tc.recordTweet("tweet5", 123123);
+		 tc.recordTweet("tweet6", 123123);
 		 
 		 long[] result=tc.getTweetCountsPerFrequency(Frequency.HOUR,"tweet2",00L,12L);
 		 System.out.println(result.toString());
