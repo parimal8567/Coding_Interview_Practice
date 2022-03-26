@@ -1,7 +1,6 @@
-import java.time.Duration;
+package com.twitter.online.coding;
 import java.time.Instant;
 import java.time.LocalDateTime;
-import java.time.Period;
 import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -49,7 +48,7 @@ public class TweetCount {
 		 // arrange them as per frequency
 		 
 		 
-		 return 0;
+		 return tweetCounts.stream().mapToLong(Long::longValue).toArray();
 	 }
 	 
 	 public static void main(String[] args) {
@@ -60,6 +59,9 @@ public class TweetCount {
 		 tc.recordTweet("tweet1", 123123);
 		 tc.recordTweet("tweet1", 123123);
 		 tc.recordTweet("tweet1", 123123);
+		 
+		 long[] result=tc.getTweetCountsPerFrequency(Frequency.HOUR,"tweet2",00L,12L);
+		 System.out.println(result.toString());
 		 
 		 
 	}

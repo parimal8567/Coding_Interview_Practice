@@ -1,7 +1,6 @@
-import java.util.ArrayList;
-import java.util.Arrays;
+package com.sky.scanner.online.coding;
+
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class SkyScannerCodingInterview {

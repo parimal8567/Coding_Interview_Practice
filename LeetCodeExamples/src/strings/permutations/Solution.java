@@ -1,5 +1,8 @@
 package strings.permutations;
 
+/*
+ * Incomplete
+ */
 public class Solution {
 
 	public static void main(String[] args) {
@@ -9,7 +12,7 @@ public class Solution {
 		
 		char[] s1Array= s1.toCharArray();
 		
-		for()
+		
 		
 	}
 }

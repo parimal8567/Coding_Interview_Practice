@@ -1,5 +1,10 @@
-import java.util.Scanner;
+package com.paypal.online.coding;
 
+/**
+ * 
+ * 
+ *
+ */
 public class Solution {
 
 	
@@ -31,12 +36,6 @@ public class Solution {
 	}
 	
 	public static void main(String[] args) {
-		
-		
-		
-		
-		
-		//Scanner sc= new Scanner(System.in);
 		
 		Solution s=new Solution();
 		long r=s.solution(31,32);
