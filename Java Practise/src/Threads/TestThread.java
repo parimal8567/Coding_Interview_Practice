@@ -1,5 +1,8 @@
 package Threads;
 
+/*
+ * Incomplete
+ */
 public class TestThread implements Runnable{
 
 	public TestThread(String string) {
@@ -10,7 +13,7 @@ public class TestThread implements Runnable{
 	public static void main(String[] args) {
 		for(int i=0;i<10;i++) {
 			TestThread t1=new TestThread(String.valueOf(i));
-			t1.
+			
 		}
 		
 	}

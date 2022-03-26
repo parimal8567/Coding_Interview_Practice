@@ -1,9 +1,14 @@
 package LinkedList;
 
+/*
+ * Incomplete
+ */
 public class DeleteNode {
 
-//	/**
-//	  Definition for singly-linked list.
+	  /**
+	  *
+	  * Definition for singly-linked list.
+	  */
 	  public class ListNode {
 	      int val;
 	      ListNode next;
@@ -14,11 +19,9 @@ public class DeleteNode {
 	 }
 	
 	
-	public static void main(String[] args) {
-		ListNode node=new ListNode(4);
-		
+	public static void main(String[] args) {	
 		
 		DeleteNode dn=new DeleteNode();
-		dn.deleteNode();
+		
 	}
 }
