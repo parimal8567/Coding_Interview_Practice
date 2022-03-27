@@ -1,6 +1,10 @@
-package Practice_Test;
+package com.zalando.berlin.march.online.coding;
 
-public class Solution {
+/*
+ * Rotate the elements of list by k
+ * 
+ */
+public class RotateList {
 
 	public int[] solution(int[] A, int K) {
         // write your code in Java SE 8
@@ -21,7 +25,7 @@ public class Solution {
     }
 	
 	public static void main(String[] args) {
-		Solution s=new Solution();
+		RotateList s=new RotateList();
 		int[] a= {3, 8, 9, 7, 6};
 		int k=3;
 		int[] result=s.solution(a, k);

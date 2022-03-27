@@ -1,4 +1,4 @@
-package March2022;
+package com.zalando.berlin.march.online.coding;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Stack;
 
-public class PS2 {
+public class PathFinder {
 	
 	public boolean solution(String[][] B) {
 		Map<String,Set<String>> cellMap=new HashMap<>();
@@ -187,7 +187,7 @@ public class PS2 {
 	}
 
 	public static void main(String[] args) {
-		PS2 ps=new PS2();
+		PathFinder ps=new PathFinder();
 //		String[][] input= {{"..X<"},{"...ᐯ"},{"AX.."},{".X.."}};
 		String[][] input= {{"...<"},{"...^"},{"...<"},{".A.."}};
 		if(ps.solution(input)) {

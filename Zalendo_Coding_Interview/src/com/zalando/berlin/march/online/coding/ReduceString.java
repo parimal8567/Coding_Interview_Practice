@@ -1,4 +1,4 @@
-package March2022;
+package com.zalando.berlin.march.online.coding;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -16,7 +16,7 @@ import java.util.Map;
  * 3. ACBDACBD
  */
 
-public class PS1 {
+public class ReduceString {
 	
 	
 	
@@ -150,9 +150,9 @@ public class PS1 {
 	
 	public static void main(String[] args) {
 		
-		PS1 ps=new PS1();
+		ReduceString rs=new ReduceString();
 		String s="CABABD";
-		String result=ps.solution(s);
+		String result=rs.solution(s);
 		System.out.println(result);
 	}
 

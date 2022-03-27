@@ -1,3 +1,4 @@
+package com.zalando.berlin.feb.online.coding;
 
 public class Solution {
 
