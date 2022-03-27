@@ -86,7 +86,7 @@ public class PS2 {
 			int colNum=Integer.parseInt(String.valueOf(cell.charAt(1)));
 			if(key.equals("<")) {
 				for(int i=colNum-1;i>=0;i--) {
-					if(cellMap.get("X").contains(formElement(rowNum, i)))
+					if(null!=cellMap.get("X") && cellMap.get("X").contains(formElement(rowNum, i)))
 						return;
 					removeCellsAsGaurdIsFacing(cellMap, B, rowNum, i);
 				}	
@@ -94,7 +94,7 @@ public class PS2 {
 			
 			if(key.equals(">")) {
 				for(int i=colNum+1;i<=B[0][0].length()-1;i++) {
-					if(cellMap.get("X").contains(formElement(rowNum, i)))
+					if(null!=cellMap.get("X") && cellMap.get("X").contains(formElement(rowNum, i)))
 						return;
 					removeCellsAsGaurdIsFacing(cellMap, B, rowNum, i);
 				}	
@@ -102,7 +102,7 @@ public class PS2 {
 			
 			if(key.equals("^")) {
 				for(int i=rowNum-1;i>=0;i--) {
-					if(cellMap.get("X").contains(formElement(i, colNum)))
+					if(null!=cellMap.get("X") && cellMap.get("X").contains(formElement(i, colNum)))
 						return;
 					removeCellsAsGaurdIsFacing(cellMap, B, i, colNum);
 				}	
@@ -110,7 +110,7 @@ public class PS2 {
 			
 			if(key.equals("ᐯ")) {
 				for(int i=rowNum+1;i<B.length;i++) {
-					if(cellMap.get("X").contains(formElement(i, colNum)))
+					if(null!=cellMap.get("X") && cellMap.get("X").contains(formElement(i, colNum)))
 						return;
 					removeCellsAsGaurdIsFacing(cellMap, B, i, colNum);
 				}	
@@ -189,7 +189,7 @@ public class PS2 {
 	public static void main(String[] args) {
 		PS2 ps=new PS2();
 //		String[][] input= {{"..X<"},{"...ᐯ"},{"AX.."},{".X.."}};
-		String[][] input= {{"..X<"},{"...^"},{"AX.."},{".X.."}};
+		String[][] input= {{"...<"},{"...^"},{"...<"},{".A.."}};
 		if(ps.solution(input)) {
 			System.out.println();
 			System.out.println("PATH EXIST :)");
