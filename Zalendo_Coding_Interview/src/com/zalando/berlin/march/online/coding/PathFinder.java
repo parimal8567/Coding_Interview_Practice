@@ -189,7 +189,8 @@ public class PathFinder {
 	public static void main(String[] args) {
 		PathFinder ps=new PathFinder();
 //		String[][] input= {{"..X<"},{"...ᐯ"},{"AX.."},{".X.."}};
-		String[][] input= {{"...<"},{"...^"},{"...<"},{".A.."}};
+//		String[][] input= {{"...<"},{"...^"},{"...<"},{".A.."}};
+		String[][] input= {{"...."},{".><."},{".><."},{".AX."}};
 		if(ps.solution(input)) {
 			System.out.println();
 			System.out.println("PATH EXIST :)");
