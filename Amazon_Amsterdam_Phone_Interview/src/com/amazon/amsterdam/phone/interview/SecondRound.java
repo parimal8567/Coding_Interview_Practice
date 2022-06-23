@@ -17,11 +17,7 @@ public class SecondRound {
 		Map<String,List<String>> layout=new HashMap<>();
 		
 		for(int i=0;i<strs.length;i++) {
-			String str=strs[i];
-			char[] strTemp=str.toCharArray();
-			Arrays.sort(strTemp);
-			String sortedString=String.valueOf(strTemp);
-			
+			String str=strs[i];			
 			char[] charArray=str.toCharArray();
 			Arrays.sort(charArray);
 			String key=String.valueOf(charArray);

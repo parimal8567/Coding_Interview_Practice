@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 public class ArraySlicing {
 	
 	public double[] getAverageOfSlices(int k,int[] input) {
-		
+			
 		List<Integer> data=Arrays.stream(input).boxed().collect(Collectors.toList());
 		List<Double> output=new ArrayList<>();
 		
